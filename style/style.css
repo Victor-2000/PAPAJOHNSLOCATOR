@@ -1,0 +1,322 @@
+
+::placeholder {
+    color: #dbdbdb73;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #dbdbdb73;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #dbdbdb73;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb { 
+  border-radius:10px;
+  height: 100px;
+  background-color: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#logo{
+    position: absolute;
+    z-index: 100;
+    width: 250px;
+    height: 250px;
+    left: 140px;
+    top: 20px;
+}
+
+#map{
+    width: 100%; 
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    overflow:hidden;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#sign{
+    background: none;
+    position: absolute;
+    z-index: 100;
+    left: 323px;
+    color: #df2a27;
+    top: 116px;
+    width: 34px;
+}
+
+#marker-circle{
+    background: none;
+    position: absolute;
+    z-index: 100;
+    left: 333px;
+    top: 127px;
+    font-size: 14px;
+    color: white;
+}
+
+#circle{
+    background: none;
+    position: absolute;
+    z-index: 99;
+    left: 330px;
+    top: 152px;
+    color: rgb(66, 66, 66);
+    font-size: 20px;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+  }
+
+.title{
+    position: absolute;
+    z-index: 100;
+    font-size: 55px;
+    font-weight: bold;
+    color: #077954;
+    text-transform: uppercase;
+    top: 130px;
+    left: 134px;
+}
+
+.search-container{
+    position: absolute;
+    z-index: 100;
+    top: 210px;
+    left: 68px;
+    width: 400px;
+    height: 60px;
+    background-color: #077954;
+    border-radius: 60px;
+    display: flex;
+}
+
+.search-container .search{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search-container input{
+    width: 100%;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.search-container input:focus{
+    outline: none;
+}
+
+.search-container .search i{
+    font-size: 25px;
+    color: white;
+}
+
+.stores-list-container{
+    width: 400px;
+    height: 42vh;
+    position: absolute;
+    z-index: 100;
+    background: #ffffff94;
+    left: 68px;
+    top: 300px;
+    border-radius: 30px;
+    bottom: 0;
+    display: flex;
+    overflow-y: hidden;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.stores-list{
+    flex: 1;
+    overflow-y: scroll;
+    margin: 2px;
+    margin-top: -12px;
+}
+
+.store-container{
+    cursor: pointer;
+}
+
+.search i{
+    cursor:pointer;
+}
+
+.stores-list-container .store-container{
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.stores-list-container .store-container i{
+    padding-left: 110px;
+    font-size: 25px;
+    color: #afafaf;
+}
+
+.stores-list-container .store-container .store-address{
+    font-size: 20px;
+    height: 55px;
+    color: #4d4e4d;
+}
+
+.store-container-background{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding:12px;
+    transition: all 0.2s ease-in-out
+}
+
+.store-container-background:hover{
+    background-color: #077955c0;
+    border-radius: 18px;
+}
+
+.store-container-background:hover .dot{
+    color: white;
+    background-color: #df2a27c0;
+}
+
+.store-container-background:hover .store-address{
+    color: white;
+}
+
+.store-container .store-container-background:hover .store-phone-number{
+    color: rgba(255, 255, 255, 0.959);
+} 
+
+.hide-icon, .open-icon{
+    position: absolute;
+    float: left;
+    z-index: 100;
+    font-size: 60px;
+    color: #077955c4;
+    top: 50vh;
+    left: 5px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.open-icon{
+    left: -500px;
+}
+
+.hide-icon:hover,.open-icon:hover{
+    color: #077955e8;
+}
+
+.search-options{
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+}
+
+.dot{    
+    transition: all 0.2s ease-in-out;
+    font-size: 23px;
+    height: 25px;
+    width: 25px;
+    background-color:#bbbbbb94;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    color: rgb(66, 66, 66);
+    padding: 8px;
+    float: right;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.stores-list-container .store-container .store-phone-number{
+    font-size: 15px;
+    color: gray;
+}
+
+#info-icon{
+    color: white;
+    background-color: #0db99ef7;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.info{
+    padding-left: 23px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    color:grey;
+    padding-top: 2px;
+}
+
+#infoline{
+    margin-top: 14px;
+    margin-bottom: -14px;
+    border-top: 1px #e4e4e4;
+}
+
+#opentime-text{
+    color: grey;
+    margin-top: 0px;
+    font-size: 12px;
+}
+
+#name{
+    font-size: 17px;
+}
+
+.info-line{
+    height: 20px;
+}
+
+#direction-option{
+    cursor: pointer;
+}

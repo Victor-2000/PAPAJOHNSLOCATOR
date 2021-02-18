@@ -1,36 +1,36 @@
 ::-webkit-input-placeholder {
-  color: #dbdbdb73;
+  color: rgba(219, 219, 219, 0.45);
   opacity: 1; /* Firefox */
 }
 
 ::-moz-placeholder {
-  color: #dbdbdb73;
+  color: rgba(219, 219, 219, 0.45);
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
-  color: #dbdbdb73;
+  color: rgba(219, 219, 219, 0.45);
   opacity: 1; /* Firefox */
 }
 
 ::-ms-input-placeholder {
-  color: #dbdbdb73;
+  color: rgba(219, 219, 219, 0.45);
   opacity: 1; /* Firefox */
 }
 
 ::placeholder {
-  color: #dbdbdb73;
+  color: rgba(219, 219, 219, 0.45);
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #dbdbdb73;
+  color: rgba(219, 219, 219, 0.45);
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #dbdbdb73;
+  color: rgba(219, 219, 219, 0.45);
 }
 
 /* width */
@@ -181,7 +181,7 @@ body {
   height: 42vh;
   position: absolute;
   z-index: 100;
-  background: #ffffff94;
+  background: rgba(255, 255, 255, 0.58);
   left: 68px;
   top: 300px;
   border-radius: 30px;
@@ -232,13 +232,13 @@ body {
 }
 
 .store-container-background:hover {
-  background-color: #077955c0;
+  background-color: rgba(7, 121, 85, 0.75);
   border-radius: 18px;
 }
 
 .store-container-background:hover .dot {
   color: white;
-  background-color: #df2a27c0;
+  background-color: rgba(223, 42, 39, 0.75);
 }
 
 .store-container-background:hover .store-address {
@@ -255,7 +255,7 @@ body {
   float: left;
   z-index: 100;
   font-size: 60px;
-  color: #077955c4;
+  color: rgba(7, 121, 85, 0.77);
   top: 50vh;
   left: 5px;
   transition: all 0.2s ease-in-out;
@@ -268,7 +268,7 @@ body {
 
 .hide-icon:hover,
 .open-icon:hover {
-  color: #077955e8;
+  color: rgba(7, 121, 85, 0.91);
 }
 
 .search-options {
@@ -281,7 +281,7 @@ body {
   font-size: 23px;
   height: 25px;
   width: 25px;
-  background-color: #bbbbbb94;
+  background-color: rgba(187, 187, 187, 0.58);
   border-radius: 50%;
   display: flex;
   text-align: center;
@@ -299,7 +299,7 @@ body {
 
 #info-icon {
   color: white;
-  background-color: #0db99ef7;
+  background-color: rgba(13, 185, 158, 0.97);
   width: 20px;
   height: 20px;
   border-radius: 50%;

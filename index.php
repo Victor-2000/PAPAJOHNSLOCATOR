@@ -40,7 +40,7 @@
         </div>
         <div id="map"></div>
         <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcTroZzO4nIELfa0NlO05bhGLZpsFSwhQ&callback=initMap">
+            src= <?php require("key.php");?>>
         </script>
     </body>
 </html>

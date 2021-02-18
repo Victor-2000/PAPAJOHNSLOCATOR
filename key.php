@@ -1,0 +1,1 @@
+<?php echo "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcTroZzO4nIELfa0NlO05bhGLZpsFSwhQ&callback=initMap"?>
